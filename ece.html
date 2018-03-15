@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Much?</title>
+<link rel="icon" href="images/icon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> 
+addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<!-- bootstrap-css -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- js -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!--fonts-->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+</head>
+<body>
+<!--header-->
+<div class="header">
+	<div class="container">
+		<div class="header-left">
+			<a href="index.html">E-Much?</a>
+		</div>
+		<div class="header-right">
+			<span class="menu">MENU</span>
+					<ul class="nav1">
+						<li><a href="index.html">HOME</a></li>
+						<li><a class="scroll" href="#about">ABOUT</a></li>	
+						<li><a class="scroll" href="#approach">DESCRIPTION</a></li>
+						<li><a href="https://docs.google.com/forms/d/1cvz0Xmp26lVO-RaPh4pNSeIDqGaM8XgPH-dnJ4NGvqs/viewform?usp=send_form" target="_blank">CONTACT</a></li>
+				<!-- script for menu -->
+						<script> 
+							$( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							 // Animation complete.
+							});
+							});
+						</script>
+				<!-- //script for menu -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//header-->
+<!--banner-->
+<div id="home" class="banner">
+	<div class="container">
+			<!-- responsiveslides -->
+					<script src="js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							 // Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+					</script>
+				<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner-info text-center">
+						<h1>Welcome To E-Much?</h1>
+						<p>New way of learning.</p>
+						
+					</div>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>Electrical & Computer Engineering</h1>
+						<p>Creating future one bit at a time</p>
+						<div class="start">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--//banner-->
+<!--about-->
+<div id="about" class="about">
+	<div class="about-grids">
+		<div class="about-left">
+			<div class="about-info">
+				<h3>ABOUT </h3>
+				<p>WPI’s Department of Electrical and Computer Engineering (ECE) is known 
+				for its innovative approach to education. Our hands-on, project-based method of 
+				teaching is particularly suited to produce tomorrow's leaders of the dynamic,
+				complex, and competitive field of electrical and computer engineering.</p>
+			</div>
+		</div>
+		<div class="about-right">
+			<img src="images/pic1.jpg" alt=""/>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//about-->
+<!--behind-->
+<div class="behind">
+	<div class="container">
+		<p>“Live as if you were to die tomorrow. Learn as if you were to live forever.”</p>
+	</div>
+</div>
+<!--//behind-->
+<!--approach-->
+<div id="approach" class="approach">
+	<div class="approach-grids">
+		<div class="approach-left">
+			<img src="images/pic2.jpg" alt=""/>
+		</div>
+		<div class="approach-right">
+			<h3>DESCRIPTION</h3>
+			<p>Electrical engineering is a field of engineering that generally
+			deals with the study and application of electricity, electronics, and 
+			electromagnetism. This field first became an identifiable occupation in the
+			latter half of the 19th century after commercialization of the electric 
+			telegraph, the telephone, and electric power distribution and use. Subsequently, 
+			broadcasting and recording media made electronics part of daily life. The invention 
+			of the transistor, and later the integrated circuit, brought down the cost of 
+			electronics to the point they can be used in almost any household object.</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!--//approach-->
+<!--clients-->
+<div class="clients">
+	<div class="container">
+		<h3>MATERIAL</h3>
+		<div class="flex-slider">
+			<ul id="flexiselDemo1">			
+				<li>
+					<a href="ece/ebooks.html" target="_blank"><img src="images/pic5.jpg" alt=""/></a>
+				</li>
+				<li>
+					<a href="ece/ppts.html" target="_blank"><img src="images/pic6.jpg" alt=""/></a>
+				</li>
+				<li>
+					<a href="ece/research.html" target="_blank"><img src="images/pic7.jpg" alt=""/></a>
+				</li>
+				<li>
+					<a href="ece/tutorials.html" target="_blank"><img src="images/pic8.jpg" alt=""/></a>
+				</li>
+				<li>
+					<a href="ece/video.html" target="_blank"><img src="images/pic9.jpg" alt="" /></a>
+				</li>
+			</ul>
+			<script type="text/javascript">
+							$(window).load(function() {
+								$("#flexiselDemo1").flexisel({
+									visibleItems: 5,
+									animationSpeed: 1000,
+									autoPlay: true,
+									autoPlaySpeed: 3000,    		
+									pauseOnHover: true,
+									enableResponsiveBreakpoints: true,
+									responsiveBreakpoints: { 
+										portrait: { 
+											changePoint:320,
+											visibleItems: 1
+										}, 
+										landscape: { 
+											changePoint:640,
+											visibleItems: 3
+										},
+										tablet: { 
+											changePoint:768,
+											visibleItems: 4
+										}
+									}
+								});
+								
+							});
+			</script>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+</div>
+<!--//clients-->
+
+<!--keep in touch-->
+<div class="keep">
+	<div class="container">
+		<h3>Keep in touch with Us</h3>
+		<ul>
+			<li><a class="facebook" href="#"></a></li>
+			<li><a class="twitter" href="#"></a></li>
+			<li><a class="googl" href="#"></a></li>
+			<li><a class="message" href="#"></a></li>
+		</ul>
+	</div>
+</div>
+<!--//keep in touch-->
+<!--footer-->
+<div class="footer">
+	<div class="container">
+		<p>Any questions? Contact us :  <a href="mailto:emuchbook123@gmail.com">contact@e-much.com</a> | 11-1111-1124</p>
+		<p>&copy; 2015 E-Much. All Rights Reserved.</p>
+	</div>
+</div>
+<!--//footer-->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
